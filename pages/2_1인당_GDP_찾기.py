@@ -7,6 +7,7 @@ st.set_page_config(
     page_icon="💰",
     layout="wide"
 )
+st.title("💰 1인당 GDP 찾기")
 
 whr, gdp = load_data()
 

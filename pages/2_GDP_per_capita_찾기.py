@@ -2,7 +2,7 @@ import streamlit as st
 import plotly.graph_objects as go
 from data_utils import load_data, country_selector
 
-st.title("💰 GDP per capita 찾기")
+st.title("💰 1인당 GDP 찾기")
 
 whr, gdp = load_data()
 country = country_selector(gdp["Country"].unique(), "gdp")

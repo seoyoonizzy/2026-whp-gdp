@@ -6,6 +6,7 @@ st.set_page_config(
     page_title="행복지수 찾기",
     page_icon="😊",
     layout="wide"
+)
 
 whr, gdp = load_data()
 

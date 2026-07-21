@@ -2,7 +2,11 @@ import streamlit as st
 import pandas as pd
 from data_utils import load_data, country_selector
 
-st.title("👯 쌍둥이 국가 찾기")
+st.set_page_config(
+    page_title="쌍둥이국가 찾기",
+    page_icon="👯‍♀️",
+    layout="wide"
+)
 st.caption("선택한 국가와 행복지수·GDP per capita가 가장 비슷한 국가 3곳을 각각 찾아줍니다 (최신 연도 기준).")
 
 whr, gdp = load_data()

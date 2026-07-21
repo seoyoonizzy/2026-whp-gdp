@@ -1,8 +1,11 @@
 import streamlit as st
 
-st.set_page_config(page_title="행복지수 & GDP 대시보드", layout="wide")
 
-st.title("🌍 세계 행복지수 & 1인당 GDP 대시보드")
+st.set_page_config(
+    page_title="행복지수 & GDP 대시보드",
+    page_icon="🌍",
+    layout="wide"
+)
 
 st.markdown("""
 이 앱은 **World Happiness Report(세계행복보고서)**와 **World Bank GDP per capita** 데이터를

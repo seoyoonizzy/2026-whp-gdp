@@ -2,7 +2,11 @@ import streamlit as st
 import plotly.graph_objects as go
 from data_utils import load_data, country_selector
 
-st.title("💰 1인당 GDP 찾기")
+st.set_page_config(
+    page_title="1인당 GDP 찾기",
+    page_icon="💰",
+    layout="wide"
+)
 
 whr, gdp = load_data()
 

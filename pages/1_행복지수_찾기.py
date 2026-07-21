@@ -7,7 +7,7 @@ st.set_page_config(
     page_icon="😊",
     layout="wide"
 )
-
+st.title("😊 행복지수 찾기")
 whr, gdp = load_data()
 
 tab1, tab2 = st.tabs(["📈 국가별 추이", "🗺️ 세계 지도"])

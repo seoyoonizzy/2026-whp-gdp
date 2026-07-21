@@ -6,7 +6,7 @@ st.set_page_config(
     page_icon="🌍",
     layout="wide"
 )
-
+st.title("🌎 세계 행복지수 & GDP 대시보드")
 st.markdown("""
 이 앱은 **World Happiness Report(세계행복보고서)**와 **World Bank GDP per capita** 데이터를
 바탕으로 국가별 행복지수와 경제 수준을 비교, 탐색할 수 있는 대시보드입니다.

@@ -3,7 +3,11 @@ import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 from data_utils import load_data, country_selector
 
-st.title("📊 행복지수 & GDP per capita 비교하기")
+st.set_page_config(
+    page_title="행복지수 & GDP 비교하기",
+    page_icon="📊",
+    layout="wide"
+)
 
 whr, gdp = load_data()
 country = country_selector(set(whr["Country"]) & set(gdp["Country"]), "compare")

@@ -8,6 +8,7 @@ st.set_page_config(
     page_icon="📊",
     layout="wide"
 )
+st.title("📊 행복지수 & GDP 비교하기")
 
 whr, gdp = load_data()
 country = country_selector(set(whr["Country"]) & set(gdp["Country"]), "compare")
